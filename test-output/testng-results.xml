@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="150279" started-at="2015-07-23T21:08:24Z" finished-at="2015-07-23T21:10:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="150279" started-at="2015-07-23T21:08:24Z" finished-at="2015-07-23T21:10:54Z">
+      <class name="com.booking.exam.BaseExamTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@8dacdf]" name="setUp" is-config="true" duration-ms="89133" started-at="2015-07-24T00:08:24Z" finished-at="2015-07-24T00:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="CheckWifiAndFreeParking()[pri:0, instance:com.booking.exam.BaseExamTest@8dacdf]" name="CheckWifiAndFreeParking" duration-ms="45976" started-at="2015-07-24T00:09:53Z" finished-at="2015-07-24T00:10:39Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:137)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:63)
+	at com.booking.exam.instruments.CreateListPopularHotelsAfterSearch.chekWifiAndFreeParking(CreateListPopularHotelsAfterSearch.java:72)
+	at com.booking.exam.BaseExamTest.CheckWifiAndFreeParking(BaseExamTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)
+	... 27 more
+Caused by: java.lang.NullPointerException
+	at com.booking.exam.pages.CheckWifiAndFreeParking.<init>(CheckWifiAndFreeParking.java:18)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckWifiAndFreeParking -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@8dacdf]" name="tearDown" is-config="true" duration-ms="14804" started-at="2015-07-24T00:10:40Z" finished-at="2015-07-24T00:10:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.booking.exam.BaseExamTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
