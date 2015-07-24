@@ -3,6 +3,8 @@ package com.booking.exam.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import com.booking.exam.instruments.ReadString;
 
 public class HomePageBooking {
@@ -46,6 +48,14 @@ public class HomePageBooking {
 		// return PageFactory.initElements(driver, HomePageBooking.class);
 	}
 
+	public DiscoverNewDestination discoverNewDestinations() throws Exception {
+		
+		getDestinationButton.click();
+		discoverNewDestination.click();
+		
+		return PageFactory.initElements(driver, DiscoverNewDestination.class);
+	}
+
 	@FindBy(xpath = ".//div[@id='user_form']//span[@class='uc-option__text']")
 	public WebElement callLoginForm;
 	
@@ -65,4 +75,10 @@ public class HomePageBooking {
 	public WebElement userLastName;
 
 	
+
+	@FindBy(xpath = ".//*[@id='header_dsf_link']/a/img")
+	public WebElement getDestinationButton;
+	
+	@FindBy(xpath = ".//dd[@class='dsf_banner_awareness_index_cta']")
+	public WebElement discoverNewDestination;
 }

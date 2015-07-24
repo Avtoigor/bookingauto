@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.booking.exam.pages.DestinationSearchResults;
 import  com.booking.exam.pages.HomePageBooking;
 import com.booking.exam.pages.ResultSearchPage;
 import com.booking.exam.instruments.CreateListPopularHotelsAfterSearch;
@@ -23,7 +24,7 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 
 	
-	@Test (priority = 3)
+	@Test (priority = 1)
 	public void HomePageBooking() throws Exception {
 		
 		PageFactory.initElements(driver, HomePageBooking.class)
@@ -48,7 +49,7 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 	
 	
-	@Test (priority = 1)
+	@Test (priority = 3)
 	
 	public void CheckWifiAndFreeParking () throws Exception {
 		PageFactory.initElements(driver, ResultSearchPage.class)
@@ -63,19 +64,21 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 	
 
-//	@Test (priority = 4)
-//	
-//	public void CheckIfSerchLvivResultPresent () throw Exeption {
-//		// (extend HomePageBooking())
-//		.getUrl()
-//		.openLoginForm()
-//		.handleMultipleWindows()
-//		.logIn()
-//		.discoverNewDestinations()
-//		.EnterLvivAndDropDownLVIVRegionUkraine()
-//		Assert.assertTrue (Check if any results a re found);
-//	}
-//	
+	@Test (priority = 4)
+	public void DiscoverNewDestination() throws Exception {
+		
+		PageFactory.initElements(driver, HomePageBooking.class)
+		.openLoginForm()
+		.logIn()
+		.discoverNewDestinations()
+		.enterLvivAndDropDownLVIVRegionUkraine()
+		.checkForResults();
+		
+		Assert.assertTrue(DestinationSearchResults.result, "There were no search results");
+	}
+
+
+
 //	@Test (priority = 5)
 //	
 //	public void GrabAndCheckIsTheSameAsNumberExelAndPage () {
