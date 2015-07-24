@@ -23,7 +23,7 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 
 	
-	@Test (priority = 1)
+	@Test (priority = 3)
 	public void HomePageBooking() throws Exception {
 		
 		PageFactory.initElements(driver, HomePageBooking.class)
@@ -48,7 +48,7 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 	
 	
-	@Test (priority = 3)
+	@Test (priority = 1)
 	
 	public void CheckWifiAndFreeParking () throws Exception {
 		PageFactory.initElements(driver, ResultSearchPage.class)
