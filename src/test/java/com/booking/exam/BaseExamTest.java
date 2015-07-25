@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.booking.exam.pages.DestinationSearchResults;
+import com.booking.exam.pages.GrabVisibleTownNameDestinations;
 import  com.booking.exam.pages.HomePageBooking;
 import com.booking.exam.pages.ResultSearchPage;
 import com.booking.exam.instruments.CreateListPopularHotelsAfterSearch;
@@ -19,12 +20,12 @@ public class BaseExamTest extends FrameworkBooking {
 	public void setUp() throws InterruptedException {
 		driver = startDriver();
 		driver.get("http://www.booking.com");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 	}
 
 	
-	@Test (priority = 1)
+/*	@Test (priority = 1)
 	public void HomePageBooking() throws Exception {
 		
 		PageFactory.initElements(driver, HomePageBooking.class)
@@ -76,17 +77,20 @@ public class BaseExamTest extends FrameworkBooking {
 		
 		Assert.assertTrue(DestinationSearchResults.result, "There were no search results");
 	}
+*/
 
 
+	@Test (priority = 1)
+	
+	public void CheckIsTheSameAsNumberExelAndPage () throws Exception {
 
-//	@Test (priority = 5)
-//	
-//	public void GrabAndCheckIsTheSameAsNumberExelAndPage () {
-//		.getUrl()
-//		.GrabVisibleTownNameDestinations()
-//		.saveExel
-//		Assert.assertTrue (Check if The number of entries in excel is the same as number of visible destinations on the page)
-//			}
+		PageFactory.initElements(driver, GrabVisibleTownNameDestinations.class)
+		.saveVisibleTowns()
+		.saveListToExel("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx")
+		.countExcelRows("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx");
+		
+		Assert.assertTrue(GrabVisibleTownNameDestinations.countVisibleTownsOnWeb==GrabVisibleTownNameDestinations.countVisibeTownsOnfile, "Number of visible destination is not the same as in file");
+			}
 	
 	@AfterMethod
 	public void tearDown() throws Exception {

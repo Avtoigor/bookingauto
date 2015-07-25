@@ -5,8 +5,7 @@
     <classes>
       <class name="com.booking.exam.BaseExamTest">
         <methods>
-          <include name="FindAndVerifyMontenegro"/>
-          <include name="CheckWifiAndFreeParking"/>
+          <include name="CheckIsTheSameAsNumberExelAndPage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
