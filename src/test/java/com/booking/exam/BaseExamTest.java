@@ -25,7 +25,7 @@ public class BaseExamTest extends FrameworkBooking {
 	}
 
 	
-/*	@Test (priority = 1)
+	@Test (priority = 1)
 	public void HomePageBooking() throws Exception {
 		
 		PageFactory.initElements(driver, HomePageBooking.class)
@@ -77,10 +77,10 @@ public class BaseExamTest extends FrameworkBooking {
 		
 		Assert.assertTrue(DestinationSearchResults.result, "There were no search results");
 	}
-*/
 
 
-	@Test (priority = 1)
+
+	@Test (priority = 5)
 	
 	public void CheckIsTheSameAsNumberExelAndPage () throws Exception {
 
@@ -89,7 +89,10 @@ public class BaseExamTest extends FrameworkBooking {
 		.saveListToExel("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx")
 		.countExcelRows("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx");
 		
-		Assert.assertTrue(GrabVisibleTownNameDestinations.countVisibleTownsOnWeb==GrabVisibleTownNameDestinations.countVisibeTownsOnfile, "Number of visible destination is not the same as in file");
+		System.out.println("countVisibleTownsOnWeb are" + GrabVisibleTownNameDestinations.countVisibleTownsOnWeb);
+		System.out.println("countVisibleTownsOnFile are" + GrabVisibleTownNameDestinations.countVisibeTownsOnfile);
+		
+				Assert.assertTrue(GrabVisibleTownNameDestinations.countVisibleTownsOnWeb==GrabVisibleTownNameDestinations.countVisibeTownsOnfile, "Number of visible destination is not the same as in file");
 			}
 	
 	@AfterMethod

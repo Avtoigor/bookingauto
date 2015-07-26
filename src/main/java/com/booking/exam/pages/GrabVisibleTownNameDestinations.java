@@ -59,8 +59,8 @@ public GrabVisibleTownNameDestinations saveListToExel(String saveDirectory){
 		
 	}
 
-	public int countExcelRows(String filepath){
-		int countVisibeTownsOnfile = 0;
+	public GrabVisibleTownNameDestinations countExcelRows(String filepath){
+		int counFileRow = 0;
 		try {
             FileInputStream file = new FileInputStream(new File(filepath));
             XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -71,7 +71,7 @@ public GrabVisibleTownNameDestinations saveListToExel(String saveDirectory){
                 Iterator <Cell> cellIterator = row.cellIterator();
                 while (cellIterator.hasNext()) {
                     cellIterator.next();
-                    countVisibeTownsOnfile++;
+                    counFileRow++;
                 }
             }
             file.close();
@@ -80,8 +80,12 @@ public GrabVisibleTownNameDestinations saveListToExel(String saveDirectory){
         } catch (IOException e) {
             e.printStackTrace();
         }
+		
+		
+		countVisibeTownsOnfile = counFileRow;
 		System.out.println("Get are" + countVisibeTownsOnfile + "on the file");
-		return countVisibeTownsOnfile;
+		
+		return this;
 	}
 
 	@FindBy (xpath=".//*[@id='popularDestinations']//h3/a") public List<WebElement> townList;
