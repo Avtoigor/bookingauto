@@ -2,68 +2,68 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="355994" started-at="2015-07-26T06:51:54Z" finished-at="2015-07-26T06:57:50Z">
+  <suite name="Default suite" duration-ms="788128" started-at="2015-07-28T15:07:16Z" finished-at="2015-07-28T15:20:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="355994" started-at="2015-07-26T06:51:54Z" finished-at="2015-07-26T06:57:50Z">
+    <test name="Default test" duration-ms="788128" started-at="2015-07-28T15:07:16Z" finished-at="2015-07-28T15:20:24Z">
       <class name="com.booking.exam.BaseExamTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="setUp" is-config="true" duration-ms="41685" started-at="2015-07-26T09:51:54Z" finished-at="2015-07-26T09:52:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="setUp" is-config="true" duration-ms="92001" started-at="2015-07-28T18:07:16Z" finished-at="2015-07-28T18:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePageBooking()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="HomePageBooking" duration-ms="24264" started-at="2015-07-26T09:52:35Z" finished-at="2015-07-26T09:53:00Z">
+        <test-method status="PASS" signature="HomePageBooking()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="HomePageBooking" duration-ms="40740" started-at="2015-07-28T18:08:48Z" finished-at="2015-07-28T18:09:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageBooking -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="tearDown" is-config="true" duration-ms="3870" started-at="2015-07-26T09:53:00Z" finished-at="2015-07-26T09:53:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="tearDown" is-config="true" duration-ms="8565" started-at="2015-07-28T18:09:29Z" finished-at="2015-07-28T18:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="setUp" is-config="true" duration-ms="33129" started-at="2015-07-26T09:53:04Z" finished-at="2015-07-26T09:53:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="setUp" is-config="true" duration-ms="85367" started-at="2015-07-28T18:09:38Z" finished-at="2015-07-28T18:11:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="FindAndVerifyMontenegro()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="FindAndVerifyMontenegro" duration-ms="41261" started-at="2015-07-26T09:53:37Z" finished-at="2015-07-26T09:54:18Z">
+        <test-method status="PASS" signature="FindAndVerifyMontenegro()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="FindAndVerifyMontenegro" duration-ms="79879" started-at="2015-07-28T18:11:03Z" finished-at="2015-07-28T18:12:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindAndVerifyMontenegro -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="tearDown" is-config="true" duration-ms="2044" started-at="2015-07-26T09:54:18Z" finished-at="2015-07-26T09:54:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="tearDown" is-config="true" duration-ms="6105" started-at="2015-07-28T18:12:23Z" finished-at="2015-07-28T18:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="setUp" is-config="true" duration-ms="35274" started-at="2015-07-26T09:54:20Z" finished-at="2015-07-26T09:54:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="setUp" is-config="true" duration-ms="79139" started-at="2015-07-28T18:12:29Z" finished-at="2015-07-28T18:13:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckWifiAndFreeParking()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="CheckWifiAndFreeParking" duration-ms="46711" started-at="2015-07-26T09:54:55Z" finished-at="2015-07-26T09:55:42Z">
+        <test-method status="PASS" signature="CheckWifiAndFreeParking()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="CheckWifiAndFreeParking" duration-ms="116933" started-at="2015-07-28T18:13:48Z" finished-at="2015-07-28T18:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckWifiAndFreeParking -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="tearDown" is-config="true" duration-ms="4332" started-at="2015-07-26T09:55:42Z" finished-at="2015-07-26T09:55:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="tearDown" is-config="true" duration-ms="9904" started-at="2015-07-28T18:15:45Z" finished-at="2015-07-28T18:15:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="setUp" is-config="true" duration-ms="36388" started-at="2015-07-26T09:55:46Z" finished-at="2015-07-26T09:56:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="setUp" is-config="true" duration-ms="86536" started-at="2015-07-28T18:15:55Z" finished-at="2015-07-28T18:17:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="DiscoverNewDestination()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="DiscoverNewDestination" duration-ms="41394" started-at="2015-07-26T09:56:23Z" finished-at="2015-07-26T09:57:04Z">
+        <test-method status="PASS" signature="DiscoverNewDestination()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="DiscoverNewDestination" duration-ms="79546" started-at="2015-07-28T18:17:22Z" finished-at="2015-07-28T18:18:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DiscoverNewDestination -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="tearDown" is-config="true" duration-ms="3666" started-at="2015-07-26T09:57:04Z" finished-at="2015-07-26T09:57:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="tearDown" is-config="true" duration-ms="6826" started-at="2015-07-28T18:18:41Z" finished-at="2015-07-28T18:18:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="setUp" is-config="true" duration-ms="35868" started-at="2015-07-26T09:57:08Z" finished-at="2015-07-26T09:57:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="setUp" is-config="true" duration-ms="78828" started-at="2015-07-28T18:18:48Z" finished-at="2015-07-28T18:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckIsTheSameAsNumberExelAndPage()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="CheckIsTheSameAsNumberExelAndPage" duration-ms="4447" started-at="2015-07-26T09:57:44Z" finished-at="2015-07-26T09:57:48Z">
+        <test-method status="PASS" signature="CheckIsTheSameAsNumberExelAndPage()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="CheckIsTheSameAsNumberExelAndPage" duration-ms="11277" started-at="2015-07-28T18:20:07Z" finished-at="2015-07-28T18:20:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckIsTheSameAsNumberExelAndPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@1684286]" name="tearDown" is-config="true" duration-ms="1502" started-at="2015-07-26T09:57:48Z" finished-at="2015-07-26T09:57:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.booking.exam.BaseExamTest@ac6e3]" name="tearDown" is-config="true" duration-ms="6196" started-at="2015-07-28T18:20:18Z" finished-at="2015-07-28T18:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

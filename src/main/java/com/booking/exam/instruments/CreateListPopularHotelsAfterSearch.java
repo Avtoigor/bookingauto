@@ -52,7 +52,7 @@ public class CreateListPopularHotelsAfterSearch {
 		try {
 			FileOutputStream out = new FileOutputStream(
 					new File(
-							"D://Users/Igor/Documents/Automation_Malkos_Course/ResultPopularHotelsList.xlsx"));
+							"files/ResultPopularHotelsList.xlsx"));
 			workbook.write(out);
 			out.close();
 			System.out.println("ResultPopularHotelsList.xlsx Successfully created");

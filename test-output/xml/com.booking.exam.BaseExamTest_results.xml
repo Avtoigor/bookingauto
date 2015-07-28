@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="first"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="250,985">
+  <properties />
+  
+  
+            <testcase name="CheckWifiAndFreeParking" time="72,585" classname="com.booking.exam.BaseExamTest" />
+                <testcase name="HomePageBooking" time="27,641" classname="com.booking.exam.BaseExamTest" />
+                <testcase name="CheckIsTheSameAsNumberExelAndPage" time="5,019" classname="com.booking.exam.BaseExamTest" />
+                <testcase name="FindAndVerifyMontenegro" time="86,902" classname="com.booking.exam.BaseExamTest" />
+                <testcase name="DiscoverNewDestination" time="58,838" classname="com.booking.exam.BaseExamTest" />
+      
+</testsuite>

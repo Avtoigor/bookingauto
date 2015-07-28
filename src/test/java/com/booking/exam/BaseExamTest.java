@@ -86,8 +86,8 @@ public class BaseExamTest extends FrameworkBooking {
 
 		PageFactory.initElements(driver, GrabVisibleTownNameDestinations.class)
 		.saveVisibleTowns()
-		.saveListToExel("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx")
-		.countExcelRows("D://Users/Igor/Documents/Automation_Malkos_Course/GrabTownsList.xlsx");
+		.saveListToExel("files/GrabTownsList.xlsx")
+		.countExcelRows("files/GrabTownsList.xlsx");
 		
 		System.out.println("countVisibleTownsOnWeb are" + GrabVisibleTownNameDestinations.countVisibleTownsOnWeb);
 		System.out.println("countVisibleTownsOnFile are" + GrabVisibleTownNameDestinations.countVisibeTownsOnfile);

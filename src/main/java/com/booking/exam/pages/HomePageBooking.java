@@ -29,7 +29,7 @@ public class HomePageBooking {
 
 	public HomePageBooking logIn() throws Exception {
 		ReadString rs = new ReadString(
-				"D://Users/Igor/Documents/Automation_Malkos_Course/loginBookingParameters.txt");
+				"files/loginBookingParameters.txt");
 
 		userFirstNameUsedForLogOn = rs.getFirstName();
 		userLastNameUsedForLogOn = rs.getLastName();
